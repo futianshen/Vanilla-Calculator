@@ -1,0 +1,87 @@
+body {
+  background-color: #dbe2ef;
+}
+input {
+  outline-style: none;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 0px;
+  width: 55px;
+  height: 55px;
+  font-size: 22px;
+}
+input:hover {
+  transition-duration: 0.3s;
+}
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 250px;
+  height: 375px;
+  margin: auto;
+  padding: 10px;
+  background-color: #000;
+}
+.calculator__monitor {
+  padding: 10px;
+  height: 30px;
+  color: #fff;
+  text-align: right;
+  font-size: 40px;
+}
+.calculator__keyboard {
+  display: flex;
+  width: 250px;
+}
+.calculator__keyboard--left {
+  margin-right: 5px;
+}
+.calculator__keyboard--multiple {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.calculator__keyboard--multiple input {
+  background-color: #808080;
+}
+.calculator__keyboard--multiple input:hover {
+  background-color: #aaa;
+}
+.calculator__keyboard--number {
+  display: flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-around;
+}
+.calculator__keyboard--number input {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.calculator__keyboard--number input:hover {
+  background-color: #555;
+}
+.calculator__keyboard--number .big {
+  width: 120px;
+  border-radius: 30px;
+  padding-left: 22px;
+  text-align-last: left;
+}
+.calculator__keyboard--operator {
+  display: flex;
+  flex-flow: column-reverse;
+}
+.calculator__keyboard--operator input {
+  background-color: #ffa500;
+  margin-bottom: 5px;
+  padding-top: 1px;
+  font-size: 30px;
+  color: #fff;
+}
+.calculator__keyboard--operator input:hover {
+  background-color: #ffaf00;
+}
